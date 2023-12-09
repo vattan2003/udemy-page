@@ -1,0 +1,300 @@
+* {
+    margin: o;
+    padding: o;
+}
+
+body {
+    font-family: 'gabarito', sans-serif;
+}
+
+.navbar {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid black 2px;
+    gap: 20px;
+    align-items: center;
+}
+
+.navbar__s1__title {
+    color: blueviolet;
+
+}
+
+.navbar__s2 {
+    padding: 5px;
+    border: solid black 1px;
+    border-radius: 30px;
+    width: 60%;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar__s2 input {
+    width: 100%;
+    border: none;
+    font-size: 18px;
+}
+
+.navbar__s2 input:focus {
+    outline: none;
+}
+
+.navbar__s3 {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.departments {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: solid black 1px;
+
+}
+
+.departments h3 {
+    background-color: blueviolet;
+    color: white;
+    border-radius: 20px;
+    padding: 5px;
+
+}
+
+.departments h3:hover {
+    background-color: lightskyblue;
+    transition-duration: 2s;
+}
+
+.notify-card img {
+    padding: 30px;
+    width: 95%;
+    margin-right: 20px;
+}
+
+.notify-card h1 {
+    background-color: lightpink;
+    width: fit-content;
+    height: 40pxpx;
+    padding: 30px;
+    position: absolute;
+    top: 240px;
+    left: 50px;
+    animation-name: zoom;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.recomendation {
+    padding: 30px;
+
+
+}
+
+.recomendation__container {
+    display: flex;
+    padding: 30px;
+    flex-wrap: wrap;
+    border: double blueviolet 5px;
+    width: 100%;
+}
+
+.course-card img {
+    width: 180px;
+    height: 180px;
+    border: dotted blueviolet 2px;
+    border-radius: 3px;
+
+}
+
+.popular-cards img {
+
+    height: 180px;
+    width: 180px;
+    border: dotted blueviolet 2px;
+    border-radius: 3px;
+}
+
+.course-card:hover {
+    transition: 10s;
+    transform: rotatey(360deg);
+}
+
+.popular-cards {
+    justify-content: space-between;
+    border: solid black 2px;
+    width: 300px;
+    padding: 10px;
+}
+
+.mostpopular__container {
+    display: flex;
+    flex-wrap: wrap;
+    border: solid blueviolet 5px;
+    padding: 30px;
+    width: 100%;
+}
+
+.mostpopular__container :hover {
+    transition: 2s;
+    transform: rotatex(360deg);
+}
+
+.mostpopular {
+    padding: 30px;
+}
+
+.footer__container {
+    display: flex;
+    padding: 50px;
+    color: white;
+    background-color: black;
+    margin-left: 20px;
+    margin-right: 20px;
+
+
+}
+
+.footer-s2 {
+    margin-left: 30px;
+}
+
+.footer-s1 button {
+    width: 100px;
+    height: 30px;
+    background-color: gray;
+    padding: 3px;
+    margin-top: 5px;
+}
+
+.footer-s2 button {
+    width: 100px;
+    height: 30px;
+    background-color: gray;
+    padding: 3px;
+    margin-top: 5px;
+}
+
+.copyright {
+    color: white;
+    margin-left: 700px;
+    margin-top: 170px;
+}
+
+.topics__container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.topics__container p {
+    padding: 30px;
+    border: solid blueviolet 2px;
+    flex-grow: 1;
+    flex-basis: 15%;
+
+}
+
+.topics__container p:hover {
+    background-color: blueviolet;
+    transition-duration: 2s;
+
+}
+
+
+.topics__title h1 {
+    margin-left: 20px;
+}
+
+.course-card {
+    border: solid black 2px;
+
+    padding: 15px;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    flex-basis: 10%;
+    margin: 5px;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(0.5);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+
+@media screen and (max-width:800px) {
+    body {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .navbar__s2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .departments {
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width:500px) {
+    .navbar__s3 {
+        display: none;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .course-card {
+        flex-basis: 50%;
+        width: 80%;
+    }
+
+}
+@media screen and (max-width:600px) {
+    .course-card img,p{
+        flex-basis: 50%;
+        width:100%;
+    }
+
+}
+@media screen and (max-width:600px) {
+    .popular-cards{
+        flex-basis: 50%;
+        width: 350px;
+    }
+}
+@media screen and (max-width:600px) {
+    .mostpopular__container img,p{
+        flex-basis: 50%;
+        width:350px;
+    }
+}
+@media screen and (max-width:500px) {
+    .departments {
+        display: none;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .topics__container {
+        flex-basis: 10%;
+    }
+}
